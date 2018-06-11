@@ -1,6 +1,6 @@
-{% set version = "1.0.0.0" %}
+{% set version = "1.0.1.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "39293b55d609512949137f99d6534ae5981b0cab0169e30f029e8c21d91d912e" %}
+{% set hash_value = "5e34eea0107325b13b12245d60a316f5b14423f484f3ec8805e3aafb742fc9b6" %}
 
 package:
   name: 'scikit-ued'
@@ -42,7 +42,7 @@ about:
   license_file: 'LICENSE.txt'
   summary: Collection of algorithms and functions for ultrafast electron diffraction
   description: Collection of algorithms and functions for ultrafast electron diffraction.
-  doc_url: scikit-ued.readthedocs.io/en/{{ version }}
+  doc_url: https://scikit-ued.readthedocs.io/
   dev_url: 'https://github.com/LaurentRDC/scikit-ued'
 
 extra:
