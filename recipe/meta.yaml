@@ -12,7 +12,6 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  skip: True  # [ py<36 ]
   noarch: python
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
@@ -20,9 +19,9 @@ build:
 requirements:
   build:
     - pip
-    - python
+    - python>=3.6
   run:
-    - python
+    - python>=3.6
     - numpy>=1.12
     - scipy>=0.17
     - scikit-image>=0.13
