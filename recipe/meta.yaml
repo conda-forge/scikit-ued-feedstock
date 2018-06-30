@@ -1,6 +1,6 @@
-{% set version = "1.0.1.0" %}
+{% set version = "1.0.1.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "5e34eea0107325b13b12245d60a316f5b14423f484f3ec8805e3aafb742fc9b6" %}
+{% set hash_value = "6df3e72c0b9f3d9e98f295e03ca340035c90e8c65af163b2c1b94e1fecc6ae62" %}
 
 package:
   name: 'scikit-ued'
@@ -23,7 +23,7 @@ requirements:
   run:
     - python>=3.6
     - numpy>=1.12
-    - scipy>=0.17
+    - scipy>=1.0.0
     - scikit-image>=0.13
     - tifffile>=0.13
     - pywavelets>=0.5.2
