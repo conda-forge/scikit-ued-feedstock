@@ -1,6 +1,6 @@
-{% set version = "1.0.1.1" %}
+{% set version = "2.0.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "6df3e72c0b9f3d9e98f295e03ca340035c90e8c65af163b2c1b94e1fecc6ae62" %}
+{% set hash_value = "c04f9b91e2c1e67cebf124c77238fe532925ed3db7a5522b5710cf15fa6c3e2d" %}
 
 package:
   name: 'scikit-ued'
@@ -24,12 +24,12 @@ requirements:
     - python>=3.6
     - numpy>=1.12
     - scipy>=1.0.0
-    - scikit-image>=0.13
+    - scikit-image>=0.15
     - tifffile>=0.13
     - pywavelets>=0.5.2
-    - npstreams>=1.5.2
-    - spglib>=1.10
-    - pycifrw>=4
+    - crystals>=0.6.4
+    - npstreams>=1.6
+    - pyyaml>=3.1
 
 test:
   imports:
