@@ -27,6 +27,7 @@ requirements:
     - scikit-image>=0.13
     - tifffile>=0.13
     - pywavelets>=0.5.2
+    - crystals>= 0.6.4
     - npstreams>=1.5.2
     - spglib>=1.10
     - pycifrw>=4
