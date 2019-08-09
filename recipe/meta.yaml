@@ -24,13 +24,12 @@ requirements:
     - python>=3.6
     - numpy>=1.12
     - scipy>=1.0.0
-    - scikit-image>=0.13
+    - scikit-image>=0.15
     - tifffile>=0.13
     - pywavelets>=0.5.2
     - crystals>= 0.6.4
-    - npstreams>=1.5.2
-    - spglib>=1.10
-    - pycifrw>=4
+    - npstreams>=1.6
+    - pyyaml >= 3.1
 
 test:
   imports:
