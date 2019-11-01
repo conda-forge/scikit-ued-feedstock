@@ -1,6 +1,6 @@
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "c04f9b91e2c1e67cebf124c77238fe532925ed3db7a5522b5710cf15fa6c3e2d" %}
+{% set hash_value = "3f559389ba61aaa8098bf346dd3dc4bb79ad0e74d208b3957d794a46d492b705" %}
 
 package:
   name: 'scikit-ued'
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
