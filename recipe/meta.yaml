@@ -1,6 +1,6 @@
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "3f559389ba61aaa8098bf346dd3dc4bb79ad0e74d208b3957d794a46d492b705" %}
+{% set hash_value = "c42572ca10195e1f7946c3a5d08affb9b959addff75e1bd589e9ccc1abef7d26" %}
 
 package:
   name: 'scikit-ued'
