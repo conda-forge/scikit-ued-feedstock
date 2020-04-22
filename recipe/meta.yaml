@@ -30,7 +30,7 @@ requirements:
     - crystals >=1, <2
     - npstreams >=1.6, <2
     - pyyaml >=3.1, <4
-    - matplotlib >=3.0.0, <4
+    - matplotlib-base >=3.0.0, <4
 
 test:
   imports:
