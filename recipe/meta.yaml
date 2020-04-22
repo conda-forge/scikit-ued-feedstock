@@ -1,6 +1,6 @@
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "c42572ca10195e1f7946c3a5d08affb9b959addff75e1bd589e9ccc1abef7d26" %}
+{% set hash_value = "93b785ec98271a9b06aae54caa418cbea412b4b2b8abacf8177273e0e6a18476" %}
 
 package:
   name: 'scikit-ued'
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -27,7 +27,7 @@ requirements:
     - scikit-image >=0.15, <1
     - tifffile >=0.13, <1
     - pywavelets >=1.0.0, <2
-    - crystals >=0.6.5, <1
+    - crystals >=1, <2
     - npstreams >=1.6, <2
     - pyyaml >=3.1, <4
     - matplotlib >=3.0.0, <4
