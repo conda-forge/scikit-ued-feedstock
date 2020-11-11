@@ -5,9 +5,13 @@ Home: https://github.com/LaurentRDC/scikit-ued
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-ued-feedstock/blob/master/LICENSE.txt)
 
 Summary: Collection of algorithms and functions for ultrafast electron diffraction
+
+Development: https://github.com/LaurentRDC/scikit-ued
+
+Documentation: https://scikit-ued.readthedocs.io/
 
 Collection of algorithms and functions for ultrafast electron diffraction.
 
