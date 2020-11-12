@@ -3,7 +3,7 @@ About scikit-ued
 
 Home: https://github.com/LaurentRDC/scikit-ued
 
-Package license: MIT
+Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-ued-feedstock/blob/master/LICENSE.txt)
 

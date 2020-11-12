@@ -1,6 +1,6 @@
-{% set version = "2.0.5" %}
+{% set version = "2.0.6" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "79485688f40e9a50d2643bc38ed078a5a651d957221b9a83bd95c31688318942" %}
+{% set hash_value = "e3d0d0c9fa7d19092659b622036ed99617be09ddabf50c4eed90f225f7b8a1c1" %}
 
 package:
   name: 'scikit-ued'
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -24,8 +24,7 @@ requirements:
     - python >=3.6
     - numpy >=1.15, <2
     - scipy >=1.0.0, <2
-    - scikit-image >=0.15, <0.19
-    - tifffile
+    - scikit-image >=0.17, <1
     - pywavelets >=1.0.0, <2
     - crystals >=1.1.2, <2
     - npstreams >=1.6.2, <2
@@ -38,8 +37,8 @@ test:
 
 about:
   home: https://github.com/LaurentRDC/scikit-ued
-  license: MIT
-  license_family: MIT
+  license: GPL-3.0-only
+  license_family: GPL3
   license_file: 'LICENSE.txt'
   summary: Collection of algorithms and functions for ultrafast electron diffraction
   description: Collection of algorithms and functions for ultrafast electron diffraction.
