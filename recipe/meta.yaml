@@ -13,7 +13,9 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
+  entry_points:
+    - skued = skued.__main__:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
