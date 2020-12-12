@@ -37,6 +37,7 @@ test:
   imports:
     - skued
   commands:
+    - skued --help
     - python -m unittest discover --buffer
 
 about:
