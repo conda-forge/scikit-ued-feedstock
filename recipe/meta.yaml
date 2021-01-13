@@ -1,6 +1,6 @@
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "77116a087b6bc0916033874dcd498ea20177d148d31c0c1e18b20d9b351c9790" %}
+{% set hash_value = "7e8bf014309d81497f7e9f9982bcadce8610992b688eb67d8e2e9987e2db2cd3" %}
 
 package:
   name: 'scikit-ued'
@@ -21,10 +21,10 @@ build:
 requirements:
   build:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
-    - numpy >=1.15, <2
+    - python >=3.7
+    - numpy >=1.17, <2
     - scipy >=1.0.0, <2
     - scikit-image >=0.17, <1
     - pywavelets >=1.0.0, <2
