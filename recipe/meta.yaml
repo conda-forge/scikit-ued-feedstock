@@ -1,6 +1,6 @@
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "7e8bf014309d81497f7e9f9982bcadce8610992b688eb67d8e2e9987e2db2cd3" %}
+{% set hash_value = "fab5d0a1de636ddf5061079e74172e8e5bdccf5a2b2ce992b28477cd9b27486a" %}
 
 package:
   name: 'scikit-ued'
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=3.7
     - numpy >=1.17, <2
-    - scipy >=1.0.0, <2
+    - scipy >=1.5.0, <2
     - scikit-image >=0.17, <1
     - pywavelets >=1.0.0, <2
     - crystals >=1.2.2, <2
