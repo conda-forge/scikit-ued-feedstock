@@ -1,6 +1,6 @@
-{% set version = "2.1.2" %}
+{% set version = "2.1.3" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "fab5d0a1de636ddf5061079e74172e8e5bdccf5a2b2ce992b28477cd9b27486a" %}
+{% set hash_value = "d405e462c3bc5adb7185eba32769c05d1b8a038bd87952b3f2efb2ff9a58dc39" %}
 
 package:
   name: 'scikit-ued'
@@ -28,8 +28,8 @@ requirements:
     - scipy >=1.5.0, <2
     - scikit-image >=0.17, <1
     - pywavelets >=1.0.0, <2
-    - crystals >=1.2.2, <2
-    - npstreams >=1.6.4, <2
+    - crystals >=1.3.0, <2
+    - npstreams >=1.6.5, <2
     - pyyaml >=3.1
     - matplotlib-base >=3.0.0, <4
 
