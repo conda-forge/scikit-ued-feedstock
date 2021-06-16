@@ -1,15 +1,13 @@
-{% set version = "2.1.4" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "1049f4dd04892812205637a46c8016762fa13a985d576f8331801fa0d03d2a02" %}
+{% set version = "2.1.5" %}
 
 package:
-  name: 'scikit-ued'
-  version: '{{ version }}'
+  name: scikit-ued
+  version: {{ version }}
 
 source:
-  fn: 'scikit-ued-{{ version }}.tar.gz'
+  fn: scikit-ued-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/s/scikit-ued/scikit-ued-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: 72442d834f805e8dc8440383ace8c912aafadd05bc1b5e269a5abf9773dfb65f
 
 build:
   noarch: python
@@ -19,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - pip
     - python >=3.7
   run:
@@ -46,12 +44,12 @@ about:
   home: https://github.com/LaurentRDC/scikit-ued
   license: GPL-3.0-only
   license_family: GPL3
-  license_file: 'LICENSE.txt'
+  license_file: LICENSE.txt
   summary: Collection of algorithms and functions for ultrafast electron diffraction
   description: Collection of algorithms and functions for ultrafast electron diffraction.
   doc_url: https://scikit-ued.readthedocs.io/
-  dev_url: 'https://github.com/LaurentRDC/scikit-ued'
+  dev_url: https://github.com/LaurentRDC/scikit-ued
 
 extra:
-  recipe-maintainers: 
+  recipe-maintainers:
     - LaurentRDC
