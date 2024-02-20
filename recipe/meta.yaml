@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - skued = skued.__main__:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -23,13 +23,14 @@ requirements:
   run:
     - python >=3.7
     - numpy >=1.17, <2
-    - scipy >=1.5.0, <2
-    - scikit-image >=0.17, <1
+    # See https://github.com/scipy/scipy/issues/17740
+    - scipy >=1.5.0, <2, !=1.10.0
+    - scikit-image >=0.19, <1
     - pywavelets >=1.0.0, <2
-    - crystals >=1.3.0, <2
+    - crystals >=1.3.1, <2
     - npstreams >=1.6.5, <2
     - pyyaml >=3.1
-    - matplotlib-base >=3.0.0, <4
+    - matplotlib-base >=3.5, <4
 
 test:
   requires:
