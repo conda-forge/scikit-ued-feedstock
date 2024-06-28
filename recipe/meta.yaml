@@ -1,4 +1,4 @@
-{% set version = "2.1.16" %}
+{% set version = "2.1.17" %}
 
 package:
   name: scikit-ued
@@ -7,7 +7,7 @@ package:
 source:
   fn: scikit-ued-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/s/scikit-ued/scikit-ued-{{ version }}.tar.gz
-  sha256: 4c8c27902c5442c7a72effa3c098d810c2f88a27901f3a165403680e00fbb6d1
+  sha256: 8101bfb030af147ea054c8e824cfe2e3d48cb337aad133a704624abc2f3d8855
 
 build:
   noarch: python
