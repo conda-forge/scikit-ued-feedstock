@@ -6,12 +6,12 @@ package:
 
 source:
   fn: scikit-ued-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/s/scikit-ued/scikit_ued-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/s/scikit-ued/scikit_ued-{{ version }}.tar.gz
   sha256: 902998e5dac3c039d956c5aa9366cdac5558390af2765415167f3be4e0756170
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - skued = skued.__main__:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -20,9 +20,9 @@ requirements:
   host:
     - setuptools
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy >=1.17, <3
     # See https://github.com/scipy/scipy/issues/17740
     - scipy >=1.5.0, <2, !=1.10.0
@@ -36,6 +36,7 @@ requirements:
 test:
   requires:
     - pytest >= 6
+    - python {{ python_min }}
   imports:
     - skued
   commands:
